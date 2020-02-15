@@ -1,0 +1,4 @@
+#Sat Feb 15 15:12:41 BRT 2020
+base.0=/home/vitor/Projeto/mobile/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+path.0=classes.dex
