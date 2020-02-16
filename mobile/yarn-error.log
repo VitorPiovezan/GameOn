@@ -1,11 +1,11 @@
 Arguments: 
-  /usr/bin/node /usr/share/yarn/bin/yarn.js add react-native-scrollable-tab-view
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add popup-ui
 
 PATH: 
-  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/vitor/Android/Sdk/tools:/home/vitor/Android/Sdk/platform-tools
 
 Yarn version: 
-  1.19.1
+  1.21.1
 
 Node version: 
   10.15.2
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/home/vitor/FirstProject/frontend/node_modules/hoist-non-react-statics/node_modules/react-is/LICENSE'
+  Error: EACCES: permission denied, mkdir '/home/vitor/GameOn/mobile/node_modules/popup-ui'
 
 npm manifest: 
   {

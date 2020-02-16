@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { StatusBar } from 'react-native';
 
 import {
     Logo, 
@@ -10,9 +11,10 @@ import {
     ButtonRegisterOk,
     TextButton
 } from './styles';
+import { Root, Popup } from 'popup-ui';
 
-const Regis = () => (
-            <Container>
+const Regis = ({ navigation }) => (
+            <Root><Container>
                 <Logo source={require('../../assets/logo.png')}/>
                 <SubTitle>Jogue e Adiquira Elos</SubTitle>
                 <Title>Cadastrar-se</Title>
@@ -29,11 +31,22 @@ const Regis = () => (
                 <Inputs placeholder="Digite novamente sua senha" secureTextEntry={true}/>
 
                 <ButtonViewRegister>
-                    <ButtonRegisterOk>
+                    <ButtonRegisterOk
+                     
+                     onPress={() =>
+                        Popup.show({
+                        type: 'Success',
+                        title: 'Cadastro Concluído',
+                        button: false,
+                        textBody: 'Parabéns Jogador, você foi cadastrado com sucesso.',
+                        buttontext: 'Logar',
+                        callback: () => navigation.navigate('Home')
+                        })}
+                        >
                         <TextButton>Cadastrar-se</TextButton>
                     </ButtonRegisterOk>
                 </ButtonViewRegister>
-            </Container>
+            </Container></Root>
         );
 
         Regis.navigationOptions = {

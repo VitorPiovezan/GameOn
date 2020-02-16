@@ -81,7 +81,7 @@ const Profile = ({ navigation }) => (
                     <TextBoxRodape>Version: 0.3</TextBoxRodape>
                 </ViewRodape>
 
-       </ContainerProfile>     
+       </ContainerProfile>    
 );
   
 

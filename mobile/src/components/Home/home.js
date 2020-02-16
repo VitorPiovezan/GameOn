@@ -12,30 +12,33 @@ import {
     IconDeslike,
     IconLike,
     Nome,
-    InfoProfile
+    InfoProfile,
 } from './styles';
 
+import { View, TouchableOpacity, Text } from 'react-native';
+import { Root, Popup } from 'popup-ui';
+
 const Home = ({ navigation }) => (
-       <Container>
-         {/*   <ProgressBarAndroid
+    <Container>
+        {/*   <ProgressBarAndroid
             color="white"
            /> */}
-            <Card>
-                <Image source={require('../../assets/perfil_image.png')}/>
-                <Info>
-                    <Nome>Nome do Jogador</Nome>
-                    <InfoProfile>Aqui é onde vai a definição do jogador, onde informa o que ele joga.</InfoProfile>
-                </Info>
-            </Card>            
-            <ButtonStyles>
-                    <Button color={"#fbae5c"}><IconDeslike source={require('../../assets/tresh_ico_withe.png')}/></Button>
-                    <Button color={"#c48eff"}><IconLike source={require('../../assets/controll_ico_white.png')}/></Button>
-            </ButtonStyles>
-       </Container>     
+        <Card>
+            <Image source={require('../../assets/perfil_image.png')} />
+            <Info>
+                <Nome>Nome do Jogador</Nome>
+                <InfoProfile>Aqui é onde vai a definição do jogador, onde informa o que ele joga.</InfoProfile>
+            </Info>
+        </Card>
+        <ButtonStyles>
+            <Button color={"#fbae5c"}><IconDeslike source={require('../../assets/tresh_ico_withe.png')} /></Button>
+            <Button color={"#c48eff"}><IconLike source={require('../../assets/controll_ico_white.png')} /></Button>
+        </ButtonStyles>
+    </Container>
 );
 
-  export default Home;
-  
+export default Home;
+
 
 /*   <Container>
             <Card>
