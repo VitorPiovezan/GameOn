@@ -152,7 +152,15 @@ export const ViewMatch = styled.View`
     border-radius: 7;
     margin: 10px 10px 10px 10px;
 `
-export const UserMatch = styled.TouchableOpacity`
+export const UserMatch = styled.View`
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    
+`
+
+export const UserMatchTouch = styled.TouchableOpacity`
     flex-direction: column;
     padding: 10px;
     justify-content: center;
