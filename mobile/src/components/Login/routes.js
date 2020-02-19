@@ -7,6 +7,7 @@ import Profile from '../Profile/profile';
 import Config from '../Config/config';
 import EditProfile from '../EditProfile/editprofile'
 
+
 import { createAppContainer} from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
