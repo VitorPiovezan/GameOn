@@ -1,6 +1,6 @@
 import Login from './login';
 import Regis from './regis';
-import RouterBase from '../Home/router';
+import RouterBase from '../Home/routes';
 import Chat from '../Chat/chat';
 import Feed from '../Home/feed';
 import Profile from '../Profile/profile';
