@@ -1,12 +1,36 @@
 import Home from './home';
-import Profile from './profile';
+import Profile from '../Profile/profile';
 import Feed from './feed';
 
 import { createAppContainer } from 'react-navigation';
 import { createMaterialTopTabNavigator } from 'react-navigation-tabs';
 
 
-const Routes1 = createAppContainer(
+const RouterBase = createMaterialTopTabNavigator(  
+  {   
+      Profile: Profile,
+      Home: Home,  
+      Feed: Feed,  
+  },  
+  {  
+    keyboardDismissMode: 'auto',
+    swipeEnabled: true,
+    onSwipeStart: 'Profile',
+    onSwipeEnd: 'Feed',
+      tabBarOptions: {  
+          activeTintColor: 'white',  
+          showIcon: false,  
+          showLabel:true,  
+          style: {  
+              backgroundColor:'#303030'  
+          }  
+      },  
+  }  
+) 
+
+export default createAppContainer(RouterBase);  
+
+/* const Routes1 = createAppContainer(
   createMaterialTopTabNavigator(
     {
     Profile: Profile,
@@ -26,7 +50,14 @@ const Routes1 = createAppContainer(
         backgroundColor:'#303030',
       }
     }
-  },
+  }, */
+
+
+
+
+
+
+
 /*   {
     defaultNavigationOptions: ({navigation}) => ({
       tabBarIcon: ({ focused, horizontal, tintColor }) => {
@@ -48,10 +79,13 @@ const Routes1 = createAppContainer(
     }
   })
     } */
-  ));
-
-Routes1.navigationOptions = {
-  header: null,
-}
-
-export default Routes1;
+ 
+ 
+ 
+ 
+/*  
+ 
+    ));
+*/
+/*
+export default Routes1; */

@@ -13,7 +13,9 @@ import {
 } from './styles';
 import { Root, Popup } from 'popup-ui';
 
-const Regis = ({ navigation }) => (
+export default class Regis extends Component{  
+    render(){  
+        return( 
             <Root><Container>
                 <Logo source={require('../../assets/logo.png')}/>
                 <SubTitle>Jogue e Adiquira Elos</SubTitle>
@@ -40,18 +42,16 @@ const Regis = ({ navigation }) => (
                         button: false,
                         textBody: 'Parabéns Jogador, você foi cadastrado com sucesso.',
                         buttontext: 'Logar',
-                        callback: () => navigation.navigate('Home')
+                        callback: () => this.props.navigation.navigate('Home')
                         })}
                         >
                         <TextButton>Cadastrar-se</TextButton>
                     </ButtonRegisterOk>
                 </ButtonViewRegister>
             </Container></Root>
-        );
+        )}}
 
         Regis.navigationOptions = {
             header: null
           }
           
-          
-          export default Regis;

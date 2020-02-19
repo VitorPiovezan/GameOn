@@ -23,12 +23,14 @@ import {
 import { ScrollView } from 'react-native-gesture-handler';
 import { StyleSheet } from 'react-native';
 
-const Feed = ({ navigation }) => (
+export default class Feed extends Component{  
+    render(){  
+        return(   
         <ContainerFeed>
         <TextGames>Matchs recentes</TextGames>
             <ViewMatch>
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
-                <UserMathButton onPress={() => navigation.navigate('Chat') }>
+                <UserMathButton onPress={() => this.props.navigation.navigate('Chat') }>
                     <UserMatch>
                         <ImgUser source={require('../../assets/perfil_image.png')}/>
                         <NameUser>João</NameUser>
@@ -69,8 +71,7 @@ const Feed = ({ navigation }) => (
                         <NameUser>Jorge</NameUser>
                     </UserMatch>
                 </UserMathButton>                 
-
-                <UserMathButton>                    
+               <UserMathButton>                    
                     <UserMatch>
                         <ImgUser source={require('../../assets/perfil_exemple3.jpeg')}/>
                         <NameUser>Jorge</NameUser>
@@ -89,7 +90,7 @@ const Feed = ({ navigation }) => (
             <TextMessages>Mensagens</TextMessages>            
             <ViewChatsUsers>
                 <ScrollView width={'100%'}>
-                    <ButtonChatUser onPress={() => navigation.navigate('Chat') }>
+                    <ButtonChatUser onPress={() => this.props.navigation.navigate('Chat') }>
                         <ChatUsers>
                             <ImgChatUser source={require('../../assets/perfil_exemple3.jpeg')}/>   
                             <TextBoxChatUser>
@@ -100,7 +101,7 @@ const Feed = ({ navigation }) => (
                         </ChatUsers>
                     </ButtonChatUser>
 
-                    <ButtonChatUser onPress={() => navigation.navigate('Chat') }>
+                    <ButtonChatUser onPress={() => this.props.navigation.navigate('Chat') }>
                         <ChatUsers>
                             <ImgChatUser source={require('../../assets/perfil_exemple1.jpeg')}/>   
                             <TextBoxChatUser>
@@ -111,7 +112,7 @@ const Feed = ({ navigation }) => (
                         </ChatUsers>
                     </ButtonChatUser>
 
-                    <ButtonChatUser onPress={() => navigation.navigate('Chat') }>
+                    <ButtonChatUser onPress={() => this.props.navigation.navigate('Chat') }>
                         <ChatUsers>
                             <ImgChatUser source={require('../../assets/perfil_exemple2.jpeg')}/>   
                             <TextBoxChatUser>
@@ -122,7 +123,7 @@ const Feed = ({ navigation }) => (
                         </ChatUsers>
                     </ButtonChatUser>
 
-                    <ButtonChatUser onPress={() => navigation.navigate('Chat') }>
+                    <ButtonChatUser onPress={() => this.props.navigation.navigate('Chat') }>
                         <ChatUsers>
                             <ImgChatUser source={require('../../assets/perfil_image.png')}/>   
                             <TextBoxChatUser>
@@ -133,7 +134,7 @@ const Feed = ({ navigation }) => (
                         </ChatUsers>
                     </ButtonChatUser>
 
-                    <ButtonChatUser onPress={() => navigation.navigate('Chat') }>
+                    <ButtonChatUser onPress={() => this.props.navigation.navigate('Chat') }>
                         <ChatUsers>
                             <ImgChatUser source={require('../../assets/perfil_exemple2.jpeg')}/>   
                             <TextBoxChatUser>
@@ -144,7 +145,7 @@ const Feed = ({ navigation }) => (
                         </ChatUsers>
                     </ButtonChatUser>
 
-                    <ButtonChatUser onPress={() => navigation.navigate('Chat') }>
+                    <ButtonChatUser onPress={() => this.props.navigation.navigate('Chat') }>
                         <ChatUsers>
                             <ImgChatUser source={require('../../assets/perfil_exemple1.jpeg')}/>   
                             <TextBoxChatUser>
@@ -155,7 +156,7 @@ const Feed = ({ navigation }) => (
                         </ChatUsers>
                     </ButtonChatUser>
 
-                    <ButtonChatUser onPress={() => navigation.navigate('Chat') }>
+                    <ButtonChatUser onPress={() => this.props.navigation.navigate('Chat') }>
                         <ChatUsers>
                             <ImgChatUser source={require('../../assets/perfil_exemple3.jpeg')}/>   
                             <TextBoxChatUser>
@@ -166,7 +167,7 @@ const Feed = ({ navigation }) => (
                         </ChatUsers>
                     </ButtonChatUser>
 
-                    <ButtonChatUser onPress={() => navigation.navigate('Chat') }>
+                    <ButtonChatUser onPress={() => this.props.navigation.navigate('Chat') }>
                         <ChatUsers>
                             <ImgChatUser source={require('../../assets/perfil_exemple2.jpeg')}/>   
                             <TextBoxChatUser>
@@ -177,7 +178,7 @@ const Feed = ({ navigation }) => (
                         </ChatUsers>
                     </ButtonChatUser>
 
-                    <ButtonChatUser onPress={() => navigation.navigate('Chat') }>
+                    <ButtonChatUser onPress={() => this.props.navigation.navigate('Chat') }>
                         <ChatUsers>
                             <ImgChatUser source={require('../../assets/perfil_exemple1.jpeg')}/>   
                             <TextBoxChatUser>
@@ -188,7 +189,7 @@ const Feed = ({ navigation }) => (
                         </ChatUsers>
                     </ButtonChatUser>
 
-                    <ButtonChatUser onPress={() => navigation.navigate('Chat') }>
+                    <ButtonChatUser onPress={() => this.props.navigation.navigate('Chat') }>
                         <ChatUsers>
                             <ImgChatUser source={require('../../assets/perfil_exemple3.jpeg')}/>   
                             <TextBoxChatUser>
@@ -199,7 +200,7 @@ const Feed = ({ navigation }) => (
                         </ChatUsers>
                     </ButtonChatUser>
 
-                    <ButtonChatUser onPress={() => navigation.navigate('Chat') }>
+                    <ButtonChatUser onPress={() => this.props.navigation.navigate('Chat') }>
                         <ChatUsers>
                             <ImgChatUser source={require('../../assets/perfil_exemple2.jpeg')}/>   
                             <TextBoxChatUser>
@@ -213,12 +214,10 @@ const Feed = ({ navigation }) => (
             </ViewChatsUsers>
 
         </ContainerFeed> 
-);
 
-Feed.navigationOptions = {
-    header: null
-  }
-  
+)  
+}  
+}  
 
 const styles = StyleSheet.create({
     viewchatkey: {
@@ -228,5 +227,4 @@ const styles = StyleSheet.create({
     }
 })
 
-  
-  export default Feed;
+ 

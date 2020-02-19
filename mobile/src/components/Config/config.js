@@ -4,10 +4,12 @@ import {
     Container,
 } from '../Home/styles';
 
-const Config = ({ navigation }) => (
+export default class Config extends Component{  
+    render(){  
+        return( 
        <Container>
        </Container>     
-);
+)}}
 Config.navigationOptions = {
     headerTitle: 'Configurações',
     headerStyle: {
@@ -22,4 +24,3 @@ Config.navigationOptions = {
     headerTintColor: '#fff',
       
   }
-  export default Config;

@@ -20,7 +20,9 @@ import {
 import { ScrollView } from 'react-native-gesture-handler';
 import { KeyboardAvoidingView, StyleSheet } from 'react-native';
 
-const Chat = ({ navigation }) => (
+export default class Chat extends Component{  
+    render(){  
+        return( 
     <ContainerChat>
     <ViewGames>
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
@@ -108,7 +110,9 @@ const Chat = ({ navigation }) => (
 
     
 </ContainerChat> 
-);
+)
+        }
+    }
 
 const styles = StyleSheet.create({
     viewchatkey: {
@@ -132,5 +136,3 @@ Chat.navigationOptions = {
     headerTintColor: '#fff',
       
   }
-  
-  export default Chat;

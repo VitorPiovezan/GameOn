@@ -18,7 +18,12 @@ import {
 import { View, TouchableOpacity, Text } from 'react-native';
 import { Root, Popup } from 'popup-ui';
 
-const Home = ({ navigation }) => (
+import Icon from 'react-native-vector-icons/Ionicons';
+
+export default class Home extends Component{  
+    render() {  
+        return(  
+
     <Container>
         {/*   <ProgressBarAndroid
             color="white"
@@ -35,10 +40,10 @@ const Home = ({ navigation }) => (
             <Button color={"#c48eff"}><IconLike source={require('../../assets/controll_ico_white.png')} /></Button>
         </ButtonStyles>
     </Container>
-);
-
-export default Home;
-
+)  
+    }  
+}  
+ 
 
 /*   <Container>
             <Card>

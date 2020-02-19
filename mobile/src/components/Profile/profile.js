@@ -4,49 +4,20 @@ import React, { Component } from 'react';
 import { UserMatchTouch } from '../Home/styles';
 import { ContainerProfile, ViewHeaderProfile, ImgProfileConfig, IconsProfile, ButtonProfile, ViewConfigsProfile, TextBoxNameProfile, ViewTextProfile, ViewContentProfile, TextBoxContentProfile, ViewGamesProfile, ImgUserProfile, NameUserProfile, ViewRodape, TextBoxRodape, ViewButtonOut, TextBoxButtonOut, ButtonOut } from "./styles_profile";
 import { ScrollView } from 'react-native-gesture-handler';
-import { Modal, Text } from 'react-native';
 
-/* class ModalExample extends Component {
-    state = {
-      modalVisible: false,
-    };
-  
-    setModalVisible(visible) {
-      this.setState({modalVisible: visible});
-    } */
+import Icon from 'react-native-vector-icons/Ionicons';  
 
-
-    const Profile = ({ navigation }) => (
+export default class Profile extends Component{  
+    render(){  
+        return( 
        <ContainerProfile>
-
-           {/* <Modal
-          animationType="slide"
-          transparent={false}
-          visible={this.state.modalVisible}
-          onRequestClose={() => {
-            Alert.alert('Modal has been closed.');
-          }}>
-          <ContainerProfile style={{marginTop: 22}}>
-            <ContainerProfile>
-              <Text>Hello World!</Text>
-
-              <UserMatchTouch
-                onPress={() => {
-                  this.setModalVisible(!this.state.modalVisible);
-                }}>
-                <Text>Hide Modal</Text>
-              </UserMatchTouch>
-            </ContainerProfile>
-          </ContainerProfile>
-        </Modal> */}
-
             <ViewHeaderProfile>
                 <ViewConfigsProfile>
-                    <ButtonProfile onPress={() => navigation.navigate('Config') }>
+                    <ButtonProfile onPress={() => this.props.navigation.navigate('Config') }>
                         <IconsProfile source={require('../../assets/configIcon.png')}/>
                     </ButtonProfile>
                     <ImgProfileConfig source={require('../../assets/perfil_image.png')}/>
-                    <ButtonProfile onPress={() => navigation.navigate('EditProfile') } >
+                    <ButtonProfile onPress={() => this.props.navigation.navigate('EditProfile') } >
                         <IconsProfile source={require('../../assets/perfilIcon.png')}/>
                     </ButtonProfile>
                 </ViewConfigsProfile>
@@ -62,9 +33,7 @@ import { Modal, Text } from 'react-native';
                     <ViewGamesProfile>
                         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
                         
-                            <UserMatchTouch /* onPress={() => {
-                                            this.setModalVisible(true);
-                                            }} */>
+                            <UserMatchTouch>
                                 <ImgUserProfile source={require('../../assets/game_exemple2.jpg')}/>
                                 <NameUserProfile>CSGO</NameUserProfile>
                             </UserMatchTouch>
@@ -106,7 +75,7 @@ import { Modal, Text } from 'react-native';
                         </ScrollView>                                 
                     </ViewGamesProfile> 
             </ViewContentProfile>
-                <ButtonOut  onPress={() => navigation.navigate('Login') } >
+                <ButtonOut  onPress={() => this.props.navigation.navigate('Login') } >
                     <ViewButtonOut>
                         <TextBoxButtonOut>Sair</TextBoxButtonOut>
                     </ViewButtonOut>
@@ -117,7 +86,11 @@ import { Modal, Text } from 'react-native';
                 </ViewRodape>
 
        </ContainerProfile>    
-);/* }; */
-                                        
+  
+  )  
+}  
+} 
 
-  export default Profile;
+Profile.navigationOptions = {
+    header: null
+  }

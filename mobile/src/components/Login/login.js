@@ -12,7 +12,9 @@ import {
     TextButton
 } from './styles';
 
-const Login = ({ navigation }) => (
+export default class Login extends Component{  
+    render(){  
+        return( 
             <Container>
 
             <StatusBar
@@ -26,22 +28,21 @@ const Login = ({ navigation }) => (
                 <Inputs placeholder="Digite sua senha" secureTextEntry={true}/>
 
                 <ButtonView>
-                    <Button onPress={() => navigation.navigate('Home') }
+                    <Button onPress={() => this.props.navigation.navigate('Home') }
                     >
                         <TextButton>Login</TextButton>
                     </Button>
                     <Button
-                        onPress={() => navigation.navigate('Regis') }
+                        onPress={() => this.props.navigation.navigate('Regis') }
                     >
                         <TextButton>Cadastre-se</TextButton>
                     </Button>
                 </ButtonView>
             </Container>
-);
+        )}}
 
 Login.navigationOptions = {
     header: null
   }
   
-  export default Login;
   

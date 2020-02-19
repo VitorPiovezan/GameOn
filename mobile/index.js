@@ -1,6 +1,6 @@
 import { AppRegistry } from "react-native";
 import { name as appName } from "./app.json";
 
-import Routes from "./src/components/Login";
+import Routes from "./src/components/Login/router";
 
 AppRegistry.registerComponent(appName, () => Routes);
