@@ -1,16 +1,64 @@
 import React, { Component } from 'react';
 
 
-import { UserMatchTouch } from '../Home/styles';
+import { UserMatchTouch, Card, Image, Info, InfoProfile, Nome } from '../Home/styles';
 import { ContainerProfile, ViewHeaderProfile, ImgProfileConfig, IconsProfile, ButtonProfile, ViewConfigsProfile, TextBoxNameProfile, ViewTextProfile, ViewContentProfile, TextBoxContentProfile, ViewGamesProfile, ImgUserProfile, NameUserProfile, ViewRodape, TextBoxRodape, ViewButtonOut, TextBoxButtonOut, ButtonOut } from "./styles_profile";
 import { ScrollView } from 'react-native-gesture-handler';
-
-import Icon from 'react-native-vector-icons/Ionicons';  
+import { Modal, TouchableOpacity } from 'react-native';
 
 export default class Profile extends Component{  
+    state = {
+        isVisible: false, //state of modal default false
+    }
+
+    setModalVisible(visible) {
+        this.setState({isVisible: visible});
+      }
+
     render(){  
         return( 
        <ContainerProfile>
+
+       
+            <Modal
+            animationType={'fade'}
+            transparent={true}
+            visible={this.state.isVisible}
+            onRequestClose={() => {
+                console.log('Modal has been closed.');
+            }}>
+                <TouchableOpacity 
+                        activeOpacity = {0}
+
+                        style={{
+                        flex: 1,
+                        flexDirection: 'column',
+                        justifyContent: 'center',
+                        alignItems: 'center'}}
+
+                        onPress={() => {
+                            this.setModalVisible(!this.state.isVisible);
+                        }}>
+                    <Card>
+                    <Image source={require('../../assets/perfil_image.png')} />
+                        <Info>
+                            <Nome>Nome do Jogador</Nome>
+                            <InfoProfile>Aqui é onde vai a definição do jogador, onde informa o que ele joga.</InfoProfile>
+                            
+                            <UserMatchTouch title="Click To Open Modal"
+                                            onPress={() => {
+                                                this.setModalVisible(!this.state.isVisible);
+                                            }}>
+                                <ImgUserProfile source={require('../../assets/game_exemple2.jpg')}/>
+                                <NameUserProfile>CSGO</NameUserProfile>
+                            </UserMatchTouch>
+
+                        </Info>
+                    </Card>   
+                </TouchableOpacity>                                          
+        </Modal>
+       
+
             <ViewHeaderProfile>
                 <ViewConfigsProfile>
                     <ButtonProfile onPress={() => this.props.navigation.navigate('Config') }>
@@ -33,7 +81,10 @@ export default class Profile extends Component{
                     <ViewGamesProfile>
                         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
                         
-                            <UserMatchTouch>
+                            <UserMatchTouch title="Click To Open Modal"
+                                            onPress={() => {
+                                                this.setState({ isVisible: true });
+                                            }}>
                                 <ImgUserProfile source={require('../../assets/game_exemple2.jpg')}/>
                                 <NameUserProfile>CSGO</NameUserProfile>
                             </UserMatchTouch>
