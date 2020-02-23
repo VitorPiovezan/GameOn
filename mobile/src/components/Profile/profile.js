@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 
-import { UserMatchTouch, Card, Image, Info, InfoProfile, Nome } from '../Home/styles';
-import { ContainerProfile, ViewHeaderProfile, ImgProfileConfig, IconsProfile, ButtonProfile, ViewConfigsProfile, TextBoxNameProfile, ViewTextProfile, ViewContentProfile, TextBoxContentProfile, ViewGamesProfile, ImgUserProfile, NameUserProfile, ViewRodape, TextBoxRodape, ViewButtonOut, TextBoxButtonOut, ButtonOut } from "./styles_profile";
+import { UserMatchTouch} from '../Home/styles';
+import { ContainerProfile, InfoModalView, InfoModal, ButtonModal, TextModal, NomeModal, ImageModal, CardModal, ViewHeaderProfile, ImgProfileConfig, IconsProfile, ButtonProfile, ViewConfigsProfile, TextBoxNameProfile, ViewTextProfile, ViewContentProfile, TextBoxContentProfile, ViewGamesProfile, ImgUserProfile, NameUserProfile, ViewRodape, TextBoxRodape, ViewButtonOut, TextBoxButtonOut, ButtonOut } from "./styles_profile";
 import { ScrollView } from 'react-native-gesture-handler';
-import { Modal, TouchableOpacity } from 'react-native';
+import { Modal, TouchableOpacity, Linking} from 'react-native';
 
 export default class Profile extends Component{  
     state = {
@@ -19,7 +19,6 @@ export default class Profile extends Component{
         return( 
        <ContainerProfile>
 
-       
             <Modal
             animationType={'fade'}
             transparent={true}
@@ -28,7 +27,7 @@ export default class Profile extends Component{
                 console.log('Modal has been closed.');
             }}>
                 <TouchableOpacity 
-                        activeOpacity = {0}
+                        activeOpacity = {1}
 
                         style={{
                         flex: 1,
@@ -39,22 +38,16 @@ export default class Profile extends Component{
                         onPress={() => {
                             this.setModalVisible(!this.state.isVisible);
                         }}>
-                    <Card>
-                    <Image source={require('../../assets/perfil_image.png')} />
-                        <Info>
-                            <Nome>Nome do Jogador</Nome>
-                            <InfoProfile>Aqui é onde vai a definição do jogador, onde informa o que ele joga.</InfoProfile>
-                            
-                            <UserMatchTouch title="Click To Open Modal"
-                                            onPress={() => {
-                                                this.setModalVisible(!this.state.isVisible);
-                                            }}>
-                                <ImgUserProfile source={require('../../assets/game_exemple2.jpg')}/>
-                                <NameUserProfile>CSGO</NameUserProfile>
-                            </UserMatchTouch>
-
-                        </Info>
-                    </Card>   
+                    <CardModal activeOpacity = {1}>
+                    <ImageModal source={require('../../assets/csgo_image.jpeg')} />
+                        <InfoModalView>
+                            <NomeModal>Counter Strike: Global Offensive</NomeModal>
+                            <InfoModal>Counter-Strike: Global Offensive (CS:GO) é um jogo online desenvolvido pela Valve Corporation e pela Hidden Path Entertainment, sendo uma sequência de Counter-Strike: Source. É o quarto título principal da franquia. </InfoModal>
+                            <ButtonModal onPress={ ()=>{ Linking.openURL('https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/?l=portuguese')}} >
+                                <TextModal>Saiba Mais</TextModal>
+                            </ButtonModal>
+                        </InfoModalView>
+                    </CardModal> 
                 </TouchableOpacity>                                          
         </Modal>
        

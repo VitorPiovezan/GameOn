@@ -44,5 +44,3 @@ export default class Login extends Component{
 Login.navigationOptions = {
     header: null
   }
-  
-  

@@ -117,3 +117,58 @@ export const TextBoxButtonOut = styled.Text`
     font-size: 20;
     color: #ddd;
 `;
+
+export const CardModal = styled.TouchableOpacity`
+    width: 80%;
+    height: 60%;
+    background-color: #202020;
+    border-radius: 7px;
+    border: 1px;
+    border-color: rgba(10, 10, 10, 0.75);
+`;
+
+export const ImageModal = styled.Image`
+    width: 100%;
+    height: 30%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+`;
+
+export const NomeModal = styled.Text`
+    font-weight: bold;
+    color: #fff;
+    font-size: 24;
+    padding: 10px 15px 5px 15px;
+
+`;
+
+export const InfoModal = styled.Text`
+    color: #fff;
+    font-size: 16;
+    text-align: justify;
+    padding: 3px 15px 5px 15px;
+`;
+
+export const ButtonModal = styled.TouchableOpacity`
+    background-color: #ac58aa;
+    width: 50%;
+    height: 40px;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px;
+    position: absolute;
+	bottom: 0px;
+`;
+
+export const TextModal = styled.Text`
+    padding-top: 8px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+`;
+
+export const InfoModalView = styled.View`
+    align-items: center;
+    position: relative;
+    height: 60%;
+`
