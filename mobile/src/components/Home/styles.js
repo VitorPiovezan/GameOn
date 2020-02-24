@@ -7,11 +7,11 @@ export const Container = styled.View`
     align-items: center;
     background-color: #454545;
 `
+
 export const Card = styled.View`
-    width: 80%;
-    height: 60%;
+    width: 100%;
+    height:90%;
     background-color: #303030;
-    border-radius: 7px;
 `
 export const Image = styled.Image`
     width: 100%;
@@ -36,19 +36,17 @@ export const IconDeslike = styled.Image`
 `
 
 export const ButtonStyles = styled.View`
-    margin-top: 15px;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
+    height: 10%;
 `
 export const Button = styled.TouchableOpacity`
     background-color: ${props => props.color};
     align-items: center;
     justify-content: center;
-    width: 48%;
+    width: 50%;
     height: 42px;
-    border-radius: 7px;
 `
 export const IconMath = styled.Image`
 

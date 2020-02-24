@@ -24,7 +24,15 @@ const RouterBase = createMaterialTopTabNavigator(
           style: {  
               backgroundColor:'#303030'  
           }  
-      },  
+      },  container: {
+        flex: 1,
+        backgroundColor: '#454545',
+        alignItems: 'center',
+        justifyContent: 'center',
+      },
+      body: {
+          backgroundColor: '#454545'
+      }
   }  
 ) 
 
