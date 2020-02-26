@@ -7,11 +7,16 @@ export const Container = styled.View`
     align-items: center;
     background-color: #454545;
 `
+export const ContainerHome = styled.View`
+    justify-content: center;
+    align-items: center;
+`
 
 export const Card = styled.View`
-    width: 100%;
+    width: 90%;
     height:90%;
     background-color: #303030;
+    border-radius: 15px;
 `
 export const Image = styled.Image`
     width: 100%;
@@ -35,11 +40,31 @@ export const IconDeslike = styled.Image`
     height: 25px;
 `
 
+export const ViewHome = styled.View`
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+`
+export const TextSemJogador = styled.Text`
+    font-weight: bold;
+    color: #fff;
+    font-size: 24;
+    padding: 3px 0px 5px 10px;
+`
+
+export const ContainerIcons = styled.View`
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+`
+
 export const ButtonStyles = styled.View`
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    height: 10%;
+    padding: 5%;
 `
 export const Button = styled.TouchableOpacity`
     background-color: ${props => props.color};
@@ -47,6 +72,7 @@ export const Button = styled.TouchableOpacity`
     justify-content: center;
     width: 50%;
     height: 42px;
+    border-radius: 7px;
 `
 export const IconMath = styled.Image`
 

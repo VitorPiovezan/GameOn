@@ -24,7 +24,7 @@ export default class Profile extends Component{
             transparent={true}
             visible={this.state.isVisible}
             onRequestClose={() => {
-                console.log('Modal has been closed.');
+                console.log('Modareacl has been closed.');
             }}>
                 <TouchableOpacity 
                         activeOpacity = {1}

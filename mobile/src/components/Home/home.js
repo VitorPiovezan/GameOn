@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-
 import {
-    Container,
     Card,
     Image,
     Info,
@@ -13,10 +11,13 @@ import {
     IconLike,
     Nome,
     InfoProfile,
-    ContainerHome
+    ContainerHome,
+    ContainerIcons,
+    ViewHome,
+    TextSemJogador
 } from './styles';
 
-import { StyleSheet, TouchableOpacity, Text, View, Dimensions, Animated, PanResponder } from 'react-native';
+import { StyleSheet, TouchableOpacity, Text, View, Dimensions, Animated, PanResponder, YellowBox } from 'react-native';
 
 const SCREEN_HEIGHT = Dimensions.get('window').height
 const SCREEN_WIDTH = Dimensions.get('window').width
@@ -126,7 +127,7 @@ export default class Home extends Component {
         return (
           <Animated.View
             {...this.PanResponder.panHandlers}
-            key={item.id} style={[this.rotateAndTranslate, { height: SCREEN_HEIGHT, width: SCREEN_WIDTH, top: -60 , position: 'absolute' }]}>
+            key={item.id} style={[this.rotateAndTranslate, { height: SCREEN_HEIGHT, width: SCREEN_WIDTH , position: 'absolute' }]}>
             <Animated.View style={{ opacity: this.likeOpacity, transform: [{ rotate: '-30deg' }], position: 'absolute', top: 100, left: 60, zIndex: 1000 }}>
               <Text style={{ borderWidth: 1, borderColor: 'green', color: 'green', fontSize: 32, fontWeight: '800', padding: 10 }}>LIKE</Text>
 
@@ -137,8 +138,7 @@ export default class Home extends Component {
 
             </Animated.View>
 
-           
-            <Container>
+              <ContainerHome>
                 <Card>
                     <Image  source={item.uri} />
                     <Info>
@@ -146,12 +146,7 @@ export default class Home extends Component {
                         <InfoProfile>Aqui é onde vai a definição do jogador, onde informa o que ele joga.</InfoProfile>
                     </Info>
                 </Card>
-                <ButtonStyles>
-                    <Button color={"#fbae5c"}><IconDeslike source={require('../../assets/tresh_ico_withe.png')} /></Button>
-                    <Button color={"#c48eff"}><IconLike source={require('../../assets/controll_ico_white.png')} /></Button>
-                </ButtonStyles>
-            </Container>
-            
+              </ContainerHome>
 
           </Animated.View>
         )
@@ -164,7 +159,7 @@ export default class Home extends Component {
             key={item.id} style={[{
               opacity: this.nextCardOpacity,
               transform: [{ scale: this.nextCardScale }],
-              height: SCREEN_HEIGHT, width: SCREEN_WIDTH, top: -60, position: 'absolute',
+              height: SCREEN_HEIGHT, width: SCREEN_WIDTH, position: 'absolute',
             }]}>
             <Animated.View style={{ opacity: 0, transform: [{ rotate: '-30deg' }], position: 'absolute', top: 50, left: 40, zIndex: 1000 }}>
               <Text style={{ borderWidth: 1, borderColor: 'green', color: 'green', fontSize: 32, fontWeight: '800', padding: 10 }}>LIKE</Text>
@@ -175,8 +170,7 @@ export default class Home extends Component {
               <Text style={{ borderWidth: 1, borderColor: 'red', color: 'red', fontSize: 32, fontWeight: '800', padding: 10 }}>NOPE</Text>
 
             </Animated.View>
-
-            <Container>
+              <ContainerHome>
                 <Card>
                     <Image  source={item.uri} />
                     <Info>
@@ -184,11 +178,7 @@ export default class Home extends Component {
                         <InfoProfile>Aqui é onde vai a definição do jogador, onde informa o que ele joga.</InfoProfile>
                     </Info>
                 </Card>
-                <ButtonStyles>
-                    <Button color={"#fbae5c"}><IconDeslike source={require('../../assets/tresh_ico_withe.png')} /></Button>
-                    <Button color={"#c48eff"}><IconLike source={require('../../assets/controll_ico_white.png')} /></Button>
-                </ButtonStyles>
-            </Container>
+              </ContainerHome>
           </Animated.View>
         )
       }
@@ -196,19 +186,20 @@ export default class Home extends Component {
   }
 
   render() {
+    console.disableYellowBox = true;
     return (
-      <View style={{ flex: 1 }}>
-        <View style={{ height: 60 }}>
-
-        </View>
-        <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, backgroundColor: '#454545' }}>
+          <ViewHome>
+            <TextSemJogador> Nenhum jogador perto de voce...</TextSemJogador>
+          </ViewHome>
           {this.renderUsers()}
-        </View>
-        <View style={{ height: 60 }}>
-
-        </View>
-
-
+          
+          <ContainerIcons>
+          <ButtonStyles>
+                    <Button color={"#fbae5c"}><IconDeslike source={require('../../assets/tresh_ico_withe.png')} /></Button>
+                    <Button color={"#c48eff"}><IconLike source={require('../../assets/controll_ico_white.png')} /></Button>
+                </ButtonStyles>
+          </ContainerIcons>
       </View>
 
     );
