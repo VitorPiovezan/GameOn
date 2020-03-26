@@ -1,3 +1,5 @@
+When someone wants to clone the repository, in order to the react-native modules work, you should have yarn installed in your computer, and inside the project folder, run "yarn install" to get all the node_modules of the project.
+
 # GameOn
 
 no arquivo da extenção popup ui aplicar o código do txt 'popupui index.txt'
