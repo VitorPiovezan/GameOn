@@ -190,7 +190,7 @@ export default class Home extends Component {
     return (
       <View style={{ flex: 1, backgroundColor: '#454545' }}>
           <ViewHome>
-            <TextSemJogador> Nenhum jogador perto de voce...</TextSemJogador>
+            <TextSemJogador> Por que é que cê me deixa tão solto? :(</TextSemJogador>
           </ViewHome>
           {this.renderUsers()}
           

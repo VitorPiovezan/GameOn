@@ -1,5 +1,13 @@
 import styled from 'styled-components/native';
 
+export const ErrorMessage = styled.Text`
+    color: #fff;
+    margin: 5px;
+    padding: 5px;
+    background-color: red;
+    border-radius: 5px;
+`
+
 export const Container = styled.View`
     flex: auto;
     justify-content: center;

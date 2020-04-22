@@ -1,4 +1,4 @@
-#Sat Feb 15 16:34:56 BRT 2020
-base.0=/home/vitor/GameOn/mobile/android/app/build/intermediates/transforms/dexMerger/debug/0
-renamed.0=classes.dex
+#Mon Mar 30 10:27:23 BRT 2020
+base.0=/home/johnny/go/src/GameOn/mobile/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
+renamed.0=classes.dex
