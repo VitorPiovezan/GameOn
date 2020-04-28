@@ -20,12 +20,12 @@ export default class Login extends Component{
     state = {
         email: '',
         password: '',
-        error: ''
+        error: '',
     }
 
     handleNameChange = (email) => {
         this.setState({ email });
-        console.log(this.state);
+        console.log(this.state.email);
     }
 
     handlePasswordChange = (password) => {
@@ -34,7 +34,7 @@ export default class Login extends Component{
     }
 
     handleSignupPress = () => {
-        this.props.navigation.navigate('Regis');
+        this.props.navigation.navigate('Signup');
     }
 
     handleSignInPress = async () => {

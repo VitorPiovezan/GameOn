@@ -1,5 +1,5 @@
 import Login from './login';
-import Regis from './regis';
+import Signup from '../Signup/Signup'
 import RouterBase from '../Home/routes';
 import Chat from '../Chat/chat';
 import Feed from '../Home/feed';
@@ -14,7 +14,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 const Routes = createStackNavigator(  
   {  
     Login: Login,
-    Regis: Regis,
+    Signup: Signup,
     RouterBase: RouterBase,
     Chat: Chat,
     Feed: Feed,
