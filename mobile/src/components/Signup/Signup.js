@@ -19,8 +19,8 @@ import { Root, Popup } from 'popup-ui';
 export default class Signup extends Component{  
 
     state = {
-        username: 'teste',
-        email: 'teste@teste.com',
+        username: 'johnny123',
+        email: 'teste@teste.com.br',
         password: '123456',
         passwordConfirm: '123456',
         error: '',
@@ -59,7 +59,7 @@ export default class Signup extends Component{
                 console.log(this.state.error);
     
             } catch (_err) {
-                console.log(_err    );
+                console.log(_err.request)
                 this.setState({ error: 'Houve um problema no registro, verifique os dados.' });
                 console.log(this.state.error);
             }
@@ -109,15 +109,6 @@ export default class Signup extends Component{
                 <ButtonViewRegister>
                     <ButtonRegisterOk
                         onPress={this.handleSignupPress}
-                     /* onPress={() =>
-                        Popup.show({
-                        type: 'Success',
-                        title: 'Cadastro Concluído',
-                        button: false,
-                        textBody: 'Parabéns Jogador, você foi cadastrado com sucesso.',
-                        buttontext: 'Logar',
-                        callback: () => this.props.navigation.navigate('Home')
-                        })} */
                         >
                         <TextButton>Cadastrar-se</TextButton>
                     </ButtonRegisterOk>
