@@ -3,8 +3,8 @@ package models
 import "github.com/jinzhu/gorm"
 
 type Like struct {
-	UserId   uint `gorm:"foreignkey:ID"` //foreign key no banco de dados
-	targetId uint
+	userId   uint32 `json: "userLogged"`
+	targetId uint32 `json: "userTarget"`
 }
 
 func (l *Like) SaveLikes(db *gorm.DB) (*Like, error) {
