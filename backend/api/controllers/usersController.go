@@ -47,6 +47,9 @@ func (server *Server) CreateUser(w http.ResponseWriter, r *http.Request) {
 	responses.JSON(w, http.StatusCreated, userCreated)
 }
 
+//para implementar a busca inicial dos usuarios do sistema, podera haver um campo a mais para determinar o parametro de busca, como no caso do nosso sistema,
+//jogos e distancia como parametros. O sistema deve suportar jogos opcionalmente e distancia como sendo obrigatorio
+
 func (server *Server) GetUsers(w http.ResponseWriter, r *http.Request) {
 
 	user := models.User{}

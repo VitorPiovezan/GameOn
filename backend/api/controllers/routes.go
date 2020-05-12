@@ -18,7 +18,6 @@ func (s *Server) initializeRoutes() {
 	s.Router.HandleFunc("/users/{id}", middlewares.SetMiddlewareJSON(s.GetUser)).Methods("GET")
 	s.Router.HandleFunc("/users/{id}", middlewares.SetMiddlewareJSON(middlewares.SetMiddlewareAuthentication(s.UpdateUser))).Methods("PUT")
 	s.Router.HandleFunc("/users/{id}", middlewares.SetMiddlewareAuthentication(s.DeleteUser)).Methods("DELETE")
-	//s.Router.HandleFunc("/like/{id, targetid}", s.likeUser).Methods("POST")
 	s.Router.HandleFunc("/like", s.likeUser).Methods("POST")
 
 }

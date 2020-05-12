@@ -1,11 +1,10 @@
 package api
 
 import (
+	"GameOn/backend/api/controllers"
 	"fmt"
 	"log"
 	"os"
-
-	"GameOn/backend/api/controllers"
 
 	"github.com/joho/godotenv"
 )
@@ -23,6 +22,6 @@ func Run() {
 	}
 
 	server.Initialize(os.Getenv("DB_DRIVER"), os.Getenv("DB_USER"), os.Getenv("DB_PASSWORD"), os.Getenv("DB_PORT"), os.Getenv("DB_HOST"), os.Getenv("DB_NAME"))
-	server.Run(":8080")
+	server.Run(":3000")
 
 }

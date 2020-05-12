@@ -6,9 +6,9 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 	"github.com/jinzhu/gorm"
-
 	_ "github.com/jinzhu/gorm/dialects/mysql" //mysql database driver
 )
 
@@ -32,6 +32,10 @@ func (server *Server) Initialize(Dbdriver, DbUser, DbPassword, DbPort, DbHost, D
 		}
 	}
 	server.DB.Debug().AutoMigrate(&models.User{}) //database migration
+	server.DB.Debug().AutoMigrate(&models.Like{}) //database migration
+
+	server.DB.Model(&models.Like{}).AddForeignKey("user_id", "users(id)", "RESTRICT", "RESTRICT")
+	server.DB.Model(&models.Like{}).AddForeignKey("target_id", "users(id)", "RESTRICT", "RESTRICT")
 
 	server.Router = mux.NewRouter()
 
@@ -39,6 +43,7 @@ func (server *Server) Initialize(Dbdriver, DbUser, DbPassword, DbPort, DbHost, D
 }
 
 func (server *Server) Run(addr string) {
-	fmt.Println("Listening to port 8080!")
-	log.Fatal(http.ListenAndServe(addr, server.Router))
+
+	fmt.Println("Listening to port " + addr + "!")
+	log.Fatal(http.ListenAndServe(addr, handlers.CORS()(server.Router)))
 }

@@ -3,7 +3,7 @@ package seed
 import (
 	"log"
 
-	"gameon/backend/api/models"
+	"GameOn/backend/api/models"
 
 	"github.com/jinzhu/gorm"
 )
