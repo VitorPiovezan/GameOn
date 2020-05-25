@@ -4,7 +4,7 @@
             "outputFile": "/home/johnny/go/src/GameOn/mobile/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/root/.gradle/caches/transforms-2/files-2.1/3a4f4ceedacad6a743c6670a80f835f8/res/values-v16/values-v16.xml",
+                    "source": "/home/johnny/.gradle/caches/transforms-2/files-2.1/34c72394f1bd11f3bc635018fd42dbf3/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/root/.gradle/caches/transforms-2/files-2.1/bc816d32c364ca1772d4256419cc7383/res/values-v16/values-v16.xml",
+                    "source": "/home/johnny/.gradle/caches/transforms-2/files-2.1/bfbddee5c22880e89a9e70fcbb2ba5a8/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

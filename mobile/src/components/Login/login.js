@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { StatusBar, AsyncStorage } from 'react-native';
-import axios from 'axios';
 
 import {
     Logo, 
@@ -13,13 +12,14 @@ import {
     TextButton,
     ErrorMessage
 } from './styles';
+
 import api from '../../api/api';
 
 export default class Login extends Component{  
 
     state = {
-        email: '',
-        password: '',
+        email: 'teste@teste.com',
+        password: 'test',
         error: '',
     }
 
@@ -42,11 +42,15 @@ export default class Login extends Component{
             this.setState({ error: 'Errou feio, errou rude meu jovem...' })
             console.log(this.state.error);
         } else {
+            console.log(this.state);
+            this.props.navigation.navigate('Home'); 
             this.setState({ error: 'Acho que foi' })
-            const response = await api.post('/users', {
+            const response = await api.post('/login', {
                 email: this.state.email,
                 password: this.state.password,
-        });    
+        });
+        
+        
     }
 }
 

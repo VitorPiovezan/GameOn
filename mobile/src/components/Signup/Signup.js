@@ -19,10 +19,10 @@ import { Root, Popup } from 'popup-ui';
 export default class Signup extends Component{  
 
     state = {
-        username: 'johnny123',
-        email: 'teste@teste.com.br',
-        password: '123456',
-        passwordConfirm: '123456',
+        username: '',
+        email: '',
+        password: '',
+        passwordConfirm: '',
         error: '',
     }
     
@@ -73,7 +73,7 @@ export default class Signup extends Component{
         return( 
             <Root><Container>
                 <Logo source={require('../../assets/logo.png')}/>
-                <SubTitle>Jogue e Adquira Elos</SubTitle>
+                <SubTitle>Sign in, Game On</SubTitle>
                 <Title>Cadastrar-se</Title>
                 <Inputs 
                     autoCapitalize='none'
@@ -105,6 +105,7 @@ export default class Signup extends Component{
                     placeholder="Digite a confirmacao"
                     secureTextEntry={true}
                 />
+                
 
                 <ButtonViewRegister>
                     <ButtonRegisterOk
