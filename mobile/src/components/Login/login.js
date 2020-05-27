@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import { StatusBar, AsyncStorage } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { StatusBar } from 'react-native';
+import AsyncStorage from '@react-native-community/async-storage';
 
 import {
     Logo, 
@@ -15,7 +16,90 @@ import {
 
 import api from '../../api/api';
 
-export default class Login extends Component{  
+
+export default function Login({ navigation }) {
+    const [email, setEmail] = useState('teste@teste.com');
+    const [password, setPassword] = useState('teste');
+    const [error, setError] = useState([]);
+
+    useEffect(() => {
+        AsyncStorage.getItem('user').then(user => {
+            if (user) {
+                navigation.navigate('Home', {user})
+            }
+        })
+    }, []);
+
+    async function handleLogin() {
+
+        if (email == 0 || password == 0) {
+            setError([])
+            console.log(error);
+        }
+
+        const response = await api.post('/login', 
+        {
+            email: email,
+            password: password,
+        });
+
+        const token = response.data;
+        await AsyncStorage.setItem('user', token);
+
+        navigation.navigate('Home', { user: token })
+
+        //await AsyncStorage.setItem('email', id);
+
+        //navigation.navigate('Home');
+    }
+
+    return (
+        <Container>
+
+            <StatusBar
+                barStyle="light-content"
+                backgroundColor="#454545"
+            />
+                <Logo source={require('../../assets/logo.png')}/>
+                <SubTitle>Log in, Game on</SubTitle>
+                <Title>Login</Title>
+                <Inputs 
+                    autoCapitalize='none'
+                    autoCorrect={false}
+                    onChangeText={setEmail}
+                    value={email}
+                    placeholder="Digite seu e-mail" 
+                    keyboardType="email-address" 
+                />
+
+                <Inputs
+                    autoCapitalize='none'
+                    autoCorrect={false}
+                    onChangeText={setPassword} 
+                    value={password}
+                    placeholder="Digite sua senha" 
+                    secureTextEntry={true}/>
+                
+                {error.length !== 0 && <ErrorMessage>{error}</ErrorMessage>}
+
+                <ButtonView>
+                    <Button onPress={handleLogin} >
+                        <TextButton>Login</TextButton>
+                    </Button>
+
+                    <Button /* onPress={navigation.navigate('Signup')} */>
+                        <TextButton>Registrar</TextButton>
+                    </Button>
+                </ButtonView>
+            </Container>
+    )
+}
+
+Login.navigationOptions = {
+    header: null
+  }
+
+/* export default class Login extends Component{  
 
     state = {
         email: 'teste@teste.com',
@@ -95,6 +179,4 @@ export default class Login extends Component{
             </Container>
         )}}
 
-Login.navigationOptions = {
-    header: null
-  }
+ */

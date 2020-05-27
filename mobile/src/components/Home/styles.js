@@ -7,6 +7,13 @@ export const Container = styled.View`
     align-items: center;
     background-color: #454545;
 `
+export const TextoTeste = styled.Text`
+    margin: 10px;
+    padding: 5px;
+    background-color: blue;
+    font-size: 16px;
+`
+
 export const ContainerHome = styled.View`
     justify-content: center;
     align-items: center;
