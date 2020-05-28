@@ -31,11 +31,14 @@ func (server *Server) Initialize(Dbdriver, DbUser, DbPassword, DbPort, DbHost, D
 			fmt.Printf("We are connected to the %s database", Dbdriver)
 		}
 	}
-	server.DB.Debug().AutoMigrate(&models.User{}) //database migration
-	server.DB.Debug().AutoMigrate(&models.Like{}) //database migration
+	server.DB.Debug().AutoMigrate(&models.User{}) //table migration
+	server.DB.Debug().AutoMigrate(&models.Like{}) //table migration
+	server.DB.Debug().AutoMigrate(&models.Game{}) //table migration
 
+	//foreign keys
 	server.DB.Model(&models.Like{}).AddForeignKey("user_id", "users(id)", "RESTRICT", "RESTRICT")
 	server.DB.Model(&models.Like{}).AddForeignKey("target_id", "users(id)", "RESTRICT", "RESTRICT")
+	server.DB.Model(&models.Game{}).AddForeignKey("gender_id", "game_genders(id)", "RESTRICT", "RESTRICT")
 
 	server.Router = mux.NewRouter()
 
