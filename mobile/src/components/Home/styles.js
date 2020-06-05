@@ -1,29 +1,44 @@
 import styled from 'styled-components/native';
 
+// Home.js styles
 
 export const Container = styled.View`
-    flex: auto;
-    justify-content: center;
-    align-items: center;
+    flex: 1;
     background-color: #454545;
+    align-items: center;
+    justify-content: space-between;
 `
-export const TextoTeste = styled.Text`
-    margin: 10px;
-    padding: 5px;
-    background-color: blue;
-    font-size: 16px;
+export const CardsContainer = styled.View`
+    flex: 1;
+    align-self: stretch;
+    justify-content: center;
+    max-height: 700px;
+`
+
+export const EmptyText = styled.Text`
+   align-self: center;
+   color: #999;
+   font-size: 16px;
+   font-weight: bold;
 `
 
 export const ContainerHome = styled.View`
+    flex: 1;
+    background-color: #454545;
     justify-content: center;
     align-items: center;
 `
 
 export const Card = styled.View`
+    align-self: center;
+    border-width: 1;
+    borderColor: #DDD;
+    overflow: hidden;
+    position: absolute;
     width: 90%;
     height:90%;
-    background-color: #303030;
-    border-radius: 15px;
+    background-color: #505050;
+    border-radius: 8px;
 `
 export const Image = styled.Image`
     width: 100%;
@@ -31,6 +46,8 @@ export const Image = styled.Image`
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
 `
+
+
 export const Nome = styled.Text`
     font-weight: bold;
     color: #fff;
@@ -38,6 +55,20 @@ export const Nome = styled.Text`
     padding: 3px 0px 5px 10px;
 
 `
+export const Bio = styled.Text `
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff;
+    padding: 3px 0px 5px 10px;
+`
+
+export const BioView = styled.ScrollView `
+    margin: 0 10px;
+    border-radius: 7px;
+    background-color: #606060;
+    height: 100%;
+`
+
 export const IconLike = styled.Image`
     width: 40px;
     height: 20px;
@@ -53,12 +84,6 @@ export const ViewHome = styled.View`
     align-items: center;
     margin-bottom: 100px;
 `
-export const TextSemJogador = styled.Text`
-    font-weight: bold;
-    color: #fff;
-    font-size: 24;
-    padding: 3px 0px 5px 10px;
-`
 
 export const ContainerIcons = styled.View`
     justify-content: center;
@@ -67,20 +92,33 @@ export const ContainerIcons = styled.View`
     bottom: 0;
 `
 
-export const ButtonStyles = styled.View`
+export const ButtonContainer = styled.View`
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     padding: 5%;
 `
-export const Button = styled.TouchableOpacity`
-    background-color: ${props => props.color};
+export const LikeButton = styled.TouchableOpacity`
+    background-color: #6b9235;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 40%;
     height: 42px;
     border-radius: 7px;
 `
+export const DislikeButton = styled.TouchableOpacity`
+    background-color: #d93436;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 42px;
+    border-radius: 7px;
+`
+
+//End of home.js styles --------------------
+
 export const IconMath = styled.Image`
 
 `
