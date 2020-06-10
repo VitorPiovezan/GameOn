@@ -55,7 +55,7 @@ export default function Home ({ navigation }) {
           : (
             users.map( (user, index) => (
               <Card style={{zIndex: users.length - index }}>
-                <Image source={require('../../assets/johnny.jpg')} />
+                <Image source={require('../../assets/johnny.png')} />
                   <Nome>{user.email}</Nome>
                   <BioView showsVerticalScrollIndicator={false}>
                     <Bio>{user.Bio}</Bio>
