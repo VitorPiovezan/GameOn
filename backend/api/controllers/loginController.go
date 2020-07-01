@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
+	"GameOn/backend/api/auth"
 	"GameOn/backend/api/models"
 	"GameOn/backend/api/responses"
 	"GameOn/backend/api/utils/formaterror"
@@ -14,6 +15,14 @@ import (
 )
 
 func (server *Server) Login(w http.ResponseWriter, r *http.Request) {
+
+	type loggedUser struct {
+		ID    uint32 `json:"id"`
+		Name  string `json:"username"`
+		Bio   string `json:"bio"`
+		Token string `json:"token"`
+	}
+
 	body, err := ioutil.ReadAll(r.Body)
 	fmt.Printf("%s", body)
 	if err != nil {
@@ -34,13 +43,21 @@ func (server *Server) Login(w http.ResponseWriter, r *http.Request) {
 		responses.ERROR(w, http.StatusUnprocessableEntity, err)
 		return
 	}
-	Id, err := server.SignIn(user.Email, user.Password)
+	user, token, err := server.SignIn(user.Email, user.Password)
 	if err != nil {
 		formattedError := formaterror.FormatError(err.Error())
 		responses.ERROR(w, http.StatusUnprocessableEntity, formattedError)
 		return
 	}
-	responses.JSON(w, http.StatusOK, Id)
+
+	activeUser := loggedUser{}
+
+	activeUser.ID = user.ID
+	activeUser.Name = user.Username
+	activeUser.Bio = user.Bio
+	activeUser.Token = token
+
+	responses.JSON(w, http.StatusOK, activeUser)
 }
 
 //Func com token
@@ -63,9 +80,9 @@ func (server *Server) Login(w http.ResponseWriter, r *http.Request) {
 }
 */
 
-//func devolvendo ID
+//func devolvendo o objeto usuario
 
-func (server *Server) SignIn(email, password string) (uint32, error) {
+func (server *Server) SignIn(email, password string) (models.User, string, error) {
 
 	var err error
 
@@ -73,11 +90,13 @@ func (server *Server) SignIn(email, password string) (uint32, error) {
 
 	err = server.DB.Debug().Model(models.User{}).Where("email = ?", email).Take(&user).Error
 	if err != nil {
-		return 0, err
+		return user, "", err
 	}
 	err = models.VerifyPassword(user.Password, password)
 	if err != nil && err == bcrypt.ErrMismatchedHashAndPassword {
-		return 0, err
+		return user, "", err
 	}
-	return user.ID, err
+	token, err := auth.CreateToken(user.ID)
+
+	return user, token, err
 }

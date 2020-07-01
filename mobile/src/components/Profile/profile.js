@@ -1,25 +1,18 @@
-import React, { Component } from 'react';
-
-
+import React, { useState, useEffect } from 'react';
+//import ImagePicker from 'react-native-image-picker';
 import { UserMatchTouch} from '../Home/styles';
 import { ContainerProfile, InfoModalView, InfoModal, ButtonModal, TextModal, NomeModal, ImageModal, CardModal, ViewHeaderProfile, ImgProfileConfig, IconsProfile, ButtonProfile, ViewConfigsProfile, TextBoxNameProfile, ViewTextProfile, ViewContentProfile, TextBoxContentProfile, ViewGamesProfile, ImgUserProfile, NameUserProfile, ViewRodape, TextBoxRodape, ViewButtonOut, TextBoxButtonOut, ButtonOut } from "./styles_profile";
 import { ScrollView } from 'react-native-gesture-handler';
 import { Modal, TouchableOpacity, Linking} from 'react-native';
 
-export default class Profile extends Component{  
-    state = {
-        isVisible: false, //state of modal default false
-    }
+export default function Profile({ navigation }) {  
 
-    setModalVisible(visible) {
-        this.setState({isVisible: visible});
-      }
-
-    render(){  
+    const [visibility, setVisibility] = useState();
+ 
         return( 
        <ContainerProfile>
 
-            <Modal
+          {/*   <Modal
             animationType={'fade'}
             transparent={true}
             visible={this.state.isVisible}
@@ -50,21 +43,21 @@ export default class Profile extends Component{
                     </CardModal> 
                 </TouchableOpacity>                                          
         </Modal>
-       
+        */}
 
             <ViewHeaderProfile>
                 <ViewConfigsProfile>
-                    <ButtonProfile onPress={() => this.props.navigation.navigate('Config') }>
+                    <ButtonProfile onPress={() => console.log(loggedUser) }>
                         <IconsProfile source={require('../../assets/configIcon.png')}/>
                     </ButtonProfile>
-                    <ImgProfileConfig source={require('../../assets/perfil_image.png')}/>
-                    <ButtonProfile onPress={() => this.props.navigation.navigate('EditProfile') } >
+                    <ImgProfileConfig />
+                    <ButtonProfile onPress={() => navigation.navigate('EditProfile') } >
                         <IconsProfile source={require('../../assets/perfilIcon.png')}/>
                     </ButtonProfile>
                 </ViewConfigsProfile>
 
                 <ViewTextProfile>
-                    <TextBoxNameProfile>Robson Paulino</TextBoxNameProfile>
+                    <TextBoxNameProfile></TextBoxNameProfile>
                 </ViewTextProfile>
             </ViewHeaderProfile>
 
@@ -132,7 +125,7 @@ export default class Profile extends Component{
        </ContainerProfile>    
   
   )  
-}  
+
 } 
 
 Profile.navigationOptions = {

@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { Text, FlatList } from 'react-native'
-import AsyncStorage from '@react-native-community/async-storage';
+import React, { useEffect, useState, useContext } from 'react';
+import { Text, FlatList } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
+import AsyncStorage from '@react-native-community/async-storage';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+
 import {
   Bio,
   BioView,
@@ -20,10 +22,12 @@ import {
 
 import api from '../../api/api';
 
-export default function Home ({ navigation }) {
-
-  //puxar id do user atual da navegacao
-  const id = navigation.getParam('user');
+export default function Home ({ route, navigation }) {
+  
+  
+  const { id } = (route.params.actualUser);
+  console.log(id);
+  const [loggedUser, setLoggedUser] = useState({});
   const [users, setUsers] = useState([]);
   //const [matchUser, setMatchUser] = useState(null);
   
@@ -55,10 +59,10 @@ export default function Home ({ navigation }) {
           : (
             users.map( (user, index) => (
               <Card style={{zIndex: users.length - index }}>
-                <Image source={require('../../assets/johnny.png')} />
-                  <Nome>{user.email}</Nome>
+                <Image source={{  }}/>
+                  <Nome>{user.Username}</Nome>
                   <BioView showsVerticalScrollIndicator={false}>
-                    <Bio>{user.Bio}</Bio>
+                    <Bio>{user.Bio} </Bio>
                   </BioView>
                   <ButtonContainer>
                   <LikeButton onPress={handleLike}>
@@ -76,9 +80,3 @@ export default function Home ({ navigation }) {
     </Container>
   )
 }
-
-
-
-
-
-

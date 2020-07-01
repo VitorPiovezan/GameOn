@@ -5,13 +5,18 @@ INJECTED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidMani
 INJECTED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml:1:1-26:12
 INJECTED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml:1:1-26:12
 MERGED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from [:react-native-image-picker] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-21:12
 MERGED from [:react-native-gesture-handler] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:@react-native-community_async-storage] /home/johnny/go/src/GameOn/mobile/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_async-storage] /home/johnny/go/src/GameOn/mobile/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_masked-view] /home/johnny/go/src/GameOn/mobile/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-reanimated] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-safe-area-context] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-screens] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-vector-icons] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.61.4] /home/johnny/.gradle/caches/transforms-2/files-2.1/eae955cdcc4cf0824e77de08e37035b6/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.react:react-native:0.61.4] /home/johnny/.gradle/caches/transforms-2/files-2.1/ba76394b240b11f8f67f345078b6a7b1/AndroidManifest.xml:2:1-13:12
 MERGED from [org.webkit:android-jsc:r245459] /home/johnny/.gradle/caches/transforms-2/files-2.1/4a02806062ea55f7e18e869f256f8c64/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.appcompat:appcompat:1.0.2] /home/johnny/.gradle/caches/transforms-2/files-2.1/bfbddee5c22880e89a9e70fcbb2ba5a8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/3bfe9a7c0ef172f9672c670b044ebe2c/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/d56f62ea3e08cf5a4037d3cb341807a2/AndroidManifest.xml:17:1-24:12
 MERGED from [com.facebook.fresco:fresco:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/02edb988d8e668437add008b4926d112/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/d1495440a2add8ff65ab00a2001d28a1/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:drawee:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/4cecff638ac93d559b03ffc995226afb/AndroidManifest.xml:2:1-9:12
@@ -20,36 +25,36 @@ MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /home/johnny/.gradle/cache
 MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/6b85873a3fbbb5558a371906a8a3b40c/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/eb6278c26442ee8b56e4b30f54b579a3/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.soloader:soloader:0.6.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/8abad6eca4475500af06071b3009c47d/AndroidManifest.xml:2:1-13:12
-MERGED from [androidx.transition:transition:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/528fd1a2b65c36e4df3daf3aac0b1bac/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/a69544bf28122dcac09d7f02c63b49ca/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/b5a25bff39f15e61ca02b143581cd91e/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/d278d83e956ef00c37950cf9e2b4b6f0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/5682be8c9b837368d8f50177ba619746/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/johnny/.gradle/caches/transforms-2/files-2.1/d2199d69dfd72c94d321fa92f5a297d4/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/0d084a1529ea599abdd838a41b7c4c94/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/2b3c5640ab9ed47a9f92999f4828e4a1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/fa5927690bcfe00aa1a8ba27345b965c/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/9d7b6c1fa8b4bb191fb7f7e7efbf8d47/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/0b815fb812a8438ffeb807d7144cef3d/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/6891f5f279e92553df8386200a48767a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/8c39e3f7451257b2ea66e480c23b3f5b/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/90b96c72d71649f1a4c66d9aecd3ce17/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.2.1] /home/johnny/.gradle/caches/transforms-2/files-2.1/1747b50ee306bbfd6f5bf172800bb41a/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/3ea86dccbf48f0e5c617e7789bfc24fd/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/e75e85f77474e117a4adb6774179841e/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/af7dab79d77541bac0bf421a6cbad37f/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.0.1] /home/johnny/.gradle/caches/transforms-2/files-2.1/34c72394f1bd11f3bc635018fd42dbf3/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/4308aff08704d1d076d292630f1dba14/AndroidManifest.xml:17:1-25:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/cf7a3ada531ea9e3e791ea1400e4bef5/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/04cdeb1fa4186c15720567425fb3d29c/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/9d7b6c1fa8b4bb191fb7f7e7efbf8d47/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/2b3c5640ab9ed47a9f92999f4828e4a1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/0d084a1529ea599abdd838a41b7c4c94/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/f46fde50dbb462f85f013f8d5ec45608/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/047831681ca6659d2ddd864c4f928939/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/6891f5f279e92553df8386200a48767a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/d81df330f723a3bdf04233a673ba5d2d/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/94a1ad7fededd40091fd99a711e211d2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/00ee9dadaa49aa455d3af30947df2a44/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/deaf1fada9963e73b638660929af7d46/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/5076b6e9a41494c212ee083f1f7249dc/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/84a3b6ec420325e98b572a4ccc944829/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/6233c36f17f8d0a10b96327637f763d9/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/92765fc0f2993c8f40d81b3c44c6d0c0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/f658005fb69a509af3c551fa457ceda9/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/3cdc23230dc1b6449c926b35a6ee05ab/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/a3e1738b7537b3578452fa061e1b697e/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/86240fb31240a8eb151d043f4af70e3e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/51baa554c60824a166d42eedd6e51511/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/c7bbcac38059d94bf850a05238d3b1f0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/da7cc4bb943feb943e0e90f16b7423f1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/8b584aa77834adf5e7160c8b0cc23fc7/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/c7c1bbde2792a0408e4a43edd0da6629/AndroidManifest.xml:2:1-9:12
-INJECTED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml:2:1-8:12
-INJECTED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml:2:1-8:12
-INJECTED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/d75e99b1beeb920bcbc652fb80adcf54/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/21cc01ce4c1d5cb2fa7a822c4473bbcf/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/e842c2ecac4f05febfd76cbe96240093/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/3cdc23230dc1b6449c926b35a6ee05ab/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/38161ed49e0ee55292beeec5a8b7b403/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/95b1e23030c1406b420d3dba22f32a57/AndroidManifest.xml:17:1-24:12
+INJECTED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml:2:1-10:12
+INJECTED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml:2:1-10:12
+INJECTED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml:2:1-10:12
 	package
 		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml:2:3-29
 		INJECTED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml
@@ -75,16 +80,20 @@ application
 ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml:6:5-24:19
 MERGED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml:6:5-24:19
 MERGED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml:6:5-24:19
-MERGED from [com.facebook.react:react-native:0.61.4] /home/johnny/.gradle/caches/transforms-2/files-2.1/eae955cdcc4cf0824e77de08e37035b6/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.61.4] /home/johnny/.gradle/caches/transforms-2/files-2.1/eae955cdcc4cf0824e77de08e37035b6/AndroidManifest.xml:11:5-20
+MERGED from [:react-native-image-picker] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-19:19
+MERGED from [:react-native-image-picker] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-19:19
+MERGED from [com.facebook.react:react-native:0.61.4] /home/johnny/.gradle/caches/transforms-2/files-2.1/ba76394b240b11f8f67f345078b6a7b1/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.61.4] /home/johnny/.gradle/caches/transforms-2/files-2.1/ba76394b240b11f8f67f345078b6a7b1/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.material:material:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/3bfe9a7c0ef172f9672c670b044ebe2c/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/3bfe9a7c0ef172f9672c670b044ebe2c/AndroidManifest.xml:22:5-20
 MERGED from [com.facebook.soloader:soloader:0.6.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/8abad6eca4475500af06071b3009c47d/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.6.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/8abad6eca4475500af06071b3009c47d/AndroidManifest.xml:11:5-20
-MERGED from [androidx.core:core:1.0.1] /home/johnny/.gradle/caches/transforms-2/files-2.1/34c72394f1bd11f3bc635018fd42dbf3/AndroidManifest.xml:22:5-89
-MERGED from [androidx.core:core:1.0.1] /home/johnny/.gradle/caches/transforms-2/files-2.1/34c72394f1bd11f3bc635018fd42dbf3/AndroidManifest.xml:22:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/4308aff08704d1d076d292630f1dba14/AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/4308aff08704d1d076d292630f1dba14/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.core:core:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/00ee9dadaa49aa455d3af30947df2a44/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/00ee9dadaa49aa455d3af30947df2a44/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/51baa554c60824a166d42eedd6e51511/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/51baa554c60824a166d42eedd6e51511/AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.0.1] /home/johnny/.gradle/caches/transforms-2/files-2.1/34c72394f1bd11f3bc635018fd42dbf3/AndroidManifest.xml:22:18-86
+		ADDED from [androidx.core:core:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/00ee9dadaa49aa455d3af30947df2a44/AndroidManifest.xml:24:18-86
 	android:label
 		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml:8:7-39
 		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml:8:7-39
@@ -92,12 +101,12 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/johnn
 		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml:13:7-59
 		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml:13:7-59
 	tools:ignore
-		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml:7:75-114
+		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml:9:75-114
 	android:roundIcon
 		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml:10:7-41
 		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml:10:7-41
 	tools:targetApi
-		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml:7:54-74
+		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml:9:54-74
 	android:icon
 		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml:9:7-36
 		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml:9:7-36
@@ -108,7 +117,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/johnn
 		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml:12:7-38
 		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml:12:7-38
 	android:usesCleartextTraffic
-		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml:7:18-53
+		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml:9:18-53
 	android:name
 		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml:7:7-38
 		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml:7:7-38
@@ -138,20 +147,30 @@ uses-sdk
 INJECTED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/johnny/go/src/GameOn/mobile/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-image-picker] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-picker] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:@react-native-community_async-storage] /home/johnny/go/src/GameOn/mobile/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:@react-native-community_async-storage] /home/johnny/go/src/GameOn/mobile/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_async-storage] /home/johnny/go/src/GameOn/mobile/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_async-storage] /home/johnny/go/src/GameOn/mobile/node_modules/@react-native-community/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_masked-view] /home/johnny/go/src/GameOn/mobile/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_masked-view] /home/johnny/go/src/GameOn/mobile/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-reanimated] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-reanimated] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-safe-area-context] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-screens] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.61.4] /home/johnny/.gradle/caches/transforms-2/files-2.1/eae955cdcc4cf0824e77de08e37035b6/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.61.4] /home/johnny/.gradle/caches/transforms-2/files-2.1/eae955cdcc4cf0824e77de08e37035b6/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.4] /home/johnny/.gradle/caches/transforms-2/files-2.1/ba76394b240b11f8f67f345078b6a7b1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.4] /home/johnny/.gradle/caches/transforms-2/files-2.1/ba76394b240b11f8f67f345078b6a7b1/AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r245459] /home/johnny/.gradle/caches/transforms-2/files-2.1/4a02806062ea55f7e18e869f256f8c64/AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r245459] /home/johnny/.gradle/caches/transforms-2/files-2.1/4a02806062ea55f7e18e869f256f8c64/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.appcompat:appcompat:1.0.2] /home/johnny/.gradle/caches/transforms-2/files-2.1/bfbddee5c22880e89a9e70fcbb2ba5a8/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.2] /home/johnny/.gradle/caches/transforms-2/files-2.1/bfbddee5c22880e89a9e70fcbb2ba5a8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/3bfe9a7c0ef172f9672c670b044ebe2c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/3bfe9a7c0ef172f9672c670b044ebe2c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/d56f62ea3e08cf5a4037d3cb341807a2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/d56f62ea3e08cf5a4037d3cb341807a2/AndroidManifest.xml:20:5-22:41
 MERGED from [com.facebook.fresco:fresco:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/02edb988d8e668437add008b4926d112/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fresco:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/02edb988d8e668437add008b4926d112/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/d1495440a2add8ff65ab00a2001d28a1/AndroidManifest.xml:5:5-7:41
@@ -168,60 +187,60 @@ MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/johnny/.gradle/
 MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/eb6278c26442ee8b56e4b30f54b579a3/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.soloader:soloader:0.6.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/8abad6eca4475500af06071b3009c47d/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.soloader:soloader:0.6.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/8abad6eca4475500af06071b3009c47d/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.transition:transition:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/528fd1a2b65c36e4df3daf3aac0b1bac/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/528fd1a2b65c36e4df3daf3aac0b1bac/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/a69544bf28122dcac09d7f02c63b49ca/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/a69544bf28122dcac09d7f02c63b49ca/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/b5a25bff39f15e61ca02b143581cd91e/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/b5a25bff39f15e61ca02b143581cd91e/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/d278d83e956ef00c37950cf9e2b4b6f0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/d278d83e956ef00c37950cf9e2b4b6f0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/5682be8c9b837368d8f50177ba619746/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/5682be8c9b837368d8f50177ba619746/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/johnny/.gradle/caches/transforms-2/files-2.1/d2199d69dfd72c94d321fa92f5a297d4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/johnny/.gradle/caches/transforms-2/files-2.1/d2199d69dfd72c94d321fa92f5a297d4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/0d084a1529ea599abdd838a41b7c4c94/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/0d084a1529ea599abdd838a41b7c4c94/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/2b3c5640ab9ed47a9f92999f4828e4a1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/2b3c5640ab9ed47a9f92999f4828e4a1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/fa5927690bcfe00aa1a8ba27345b965c/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/fa5927690bcfe00aa1a8ba27345b965c/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/9d7b6c1fa8b4bb191fb7f7e7efbf8d47/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/9d7b6c1fa8b4bb191fb7f7e7efbf8d47/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/0b815fb812a8438ffeb807d7144cef3d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/0b815fb812a8438ffeb807d7144cef3d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/6891f5f279e92553df8386200a48767a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/6891f5f279e92553df8386200a48767a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/8c39e3f7451257b2ea66e480c23b3f5b/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/8c39e3f7451257b2ea66e480c23b3f5b/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/90b96c72d71649f1a4c66d9aecd3ce17/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/90b96c72d71649f1a4c66d9aecd3ce17/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] /home/johnny/.gradle/caches/transforms-2/files-2.1/1747b50ee306bbfd6f5bf172800bb41a/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] /home/johnny/.gradle/caches/transforms-2/files-2.1/1747b50ee306bbfd6f5bf172800bb41a/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/3ea86dccbf48f0e5c617e7789bfc24fd/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/3ea86dccbf48f0e5c617e7789bfc24fd/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/e75e85f77474e117a4adb6774179841e/AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/e75e85f77474e117a4adb6774179841e/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/af7dab79d77541bac0bf421a6cbad37f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/af7dab79d77541bac0bf421a6cbad37f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.1] /home/johnny/.gradle/caches/transforms-2/files-2.1/34c72394f1bd11f3bc635018fd42dbf3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.1] /home/johnny/.gradle/caches/transforms-2/files-2.1/34c72394f1bd11f3bc635018fd42dbf3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/4308aff08704d1d076d292630f1dba14/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/4308aff08704d1d076d292630f1dba14/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/cf7a3ada531ea9e3e791ea1400e4bef5/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/cf7a3ada531ea9e3e791ea1400e4bef5/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/04cdeb1fa4186c15720567425fb3d29c/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/04cdeb1fa4186c15720567425fb3d29c/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/9d7b6c1fa8b4bb191fb7f7e7efbf8d47/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/9d7b6c1fa8b4bb191fb7f7e7efbf8d47/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/2b3c5640ab9ed47a9f92999f4828e4a1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/2b3c5640ab9ed47a9f92999f4828e4a1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/0d084a1529ea599abdd838a41b7c4c94/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/0d084a1529ea599abdd838a41b7c4c94/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/f46fde50dbb462f85f013f8d5ec45608/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/f46fde50dbb462f85f013f8d5ec45608/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/047831681ca6659d2ddd864c4f928939/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/047831681ca6659d2ddd864c4f928939/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/6891f5f279e92553df8386200a48767a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/6891f5f279e92553df8386200a48767a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/d81df330f723a3bdf04233a673ba5d2d/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/d81df330f723a3bdf04233a673ba5d2d/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/94a1ad7fededd40091fd99a711e211d2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/94a1ad7fededd40091fd99a711e211d2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/00ee9dadaa49aa455d3af30947df2a44/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/00ee9dadaa49aa455d3af30947df2a44/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/deaf1fada9963e73b638660929af7d46/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/deaf1fada9963e73b638660929af7d46/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/5076b6e9a41494c212ee083f1f7249dc/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/5076b6e9a41494c212ee083f1f7249dc/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/84a3b6ec420325e98b572a4ccc944829/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/84a3b6ec420325e98b572a4ccc944829/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/6233c36f17f8d0a10b96327637f763d9/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/6233c36f17f8d0a10b96327637f763d9/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/92765fc0f2993c8f40d81b3c44c6d0c0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/92765fc0f2993c8f40d81b3c44c6d0c0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/f658005fb69a509af3c551fa457ceda9/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/f658005fb69a509af3c551fa457ceda9/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/3cdc23230dc1b6449c926b35a6ee05ab/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/3cdc23230dc1b6449c926b35a6ee05ab/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/a3e1738b7537b3578452fa061e1b697e/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/a3e1738b7537b3578452fa061e1b697e/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/86240fb31240a8eb151d043f4af70e3e/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/86240fb31240a8eb151d043f4af70e3e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/51baa554c60824a166d42eedd6e51511/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/51baa554c60824a166d42eedd6e51511/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/c7bbcac38059d94bf850a05238d3b1f0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/c7bbcac38059d94bf850a05238d3b1f0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/da7cc4bb943feb943e0e90f16b7423f1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/da7cc4bb943feb943e0e90f16b7423f1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/8b584aa77834adf5e7160c8b0cc23fc7/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/8b584aa77834adf5e7160c8b0cc23fc7/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/c7c1bbde2792a0408e4a43edd0da6629/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/c7c1bbde2792a0408e4a43edd0da6629/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.cardview:cardview:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/d75e99b1beeb920bcbc652fb80adcf54/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/d75e99b1beeb920bcbc652fb80adcf54/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/21cc01ce4c1d5cb2fa7a822c4473bbcf/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/21cc01ce4c1d5cb2fa7a822c4473bbcf/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/e842c2ecac4f05febfd76cbe96240093/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/e842c2ecac4f05febfd76cbe96240093/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/3cdc23230dc1b6449c926b35a6ee05ab/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/3cdc23230dc1b6449c926b35a6ee05ab/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/38161ed49e0ee55292beeec5a8b7b403/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/38161ed49e0ee55292beeec5a8b7b403/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/95b1e23030c1406b420d3dba22f32a57/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/johnny/.gradle/caches/transforms-2/files-2.1/95b1e23030c1406b420d3dba22f32a57/AndroidManifest.xml:20:5-22:41
 INJECTED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml
 INJECTED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -234,3 +253,27 @@ uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml:5:5-77
 	android:name
 		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml:5:22-75
+uses-permission#android.permission.CAMERA
+ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml:6:5-64
+	android:name
+		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml:6:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from /home/johnny/go/src/GameOn/mobile/android/app/src/debug/AndroidManifest.xml:7:22-78
+provider#com.imagepicker.FileProvider
+ADDED from [:react-native-image-picker] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-18:20
+	android:grantUriPermissions
+		ADDED from [:react-native-image-picker] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-47
+	android:authorities
+		ADDED from [:react-native-image-picker] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-60
+	android:exported
+		ADDED from [:react-native-image-picker] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-37
+	android:name
+		ADDED from [:react-native-image-picker] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-56
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-image-picker] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-17:58
+	android:resource
+		ADDED from [:react-native-image-picker] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-55
+	android:name
+		ADDED from [:react-native-image-picker] /home/johnny/go/src/GameOn/mobile/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-67

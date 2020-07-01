@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigation } from '@react-navigation/native';
+
 import { StatusBar } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 
@@ -16,16 +18,28 @@ import {
 
 import api from '../../api/api';
 
-
-export default function Login({ navigation }) {
-    const [email, setEmail] = useState('teste@teste.com');
-    const [password, setPassword] = useState('teste');
+export default function Login() {
+    
+    const navigation = useNavigation();
+    const [email, setEmail] = useState('johnnypcarvalho@gmail.com');
+    const [password, setPassword] = useState('1234');
     const [error, setError] = useState([]);
 
     useEffect(() => {
         AsyncStorage.getItem('user').then(user => {
             if (user) {
-                navigation.navigate('Home', {user})
+                /* navigation.navigate('Home', { 
+                    screen: 'Home', 
+                    params: {
+                    loggedUser: {user}
+                }}); */
+                    navigation.navigate('HomeRoute', 
+                    {
+                        screen: 'Home',
+                        params: {
+                            user: {user}
+                        }
+                      });
             }
         })
     }, []);
@@ -43,14 +57,20 @@ export default function Login({ navigation }) {
             password: password,
         });
 
-        const token = response.data;
+        const loggedUser = response.data;
+        console.log(loggedUser);
+        const { token } = response.data;
         await AsyncStorage.setItem('user', token);
 
-        navigation.navigate('Home', { user: token })
+        navigation.navigate('HomeRoute', 
+                    {
+                    screen: 'Home',
+                    params: {
+                        actualUser: response.data
+                    }
+                      });
+        
 
-        //await AsyncStorage.setItem('email', id);
-
-        //navigation.navigate('Home');
     }
 
     return (
@@ -87,7 +107,7 @@ export default function Login({ navigation }) {
                         <TextButton>Login</TextButton>
                     </Button>
 
-                    <Button /* onPress={navigation.navigate('Signup')} */>
+                    <Button onPress={() => navigation.navigate('Signup')}>
                         <TextButton>Registrar</TextButton>
                     </Button>
                 </ButtonView>
@@ -98,85 +118,3 @@ export default function Login({ navigation }) {
 Login.navigationOptions = {
     header: null
   }
-
-/* export default class Login extends Component{  
-
-    state = {
-        email: 'teste@teste.com',
-        password: 'test',
-        error: '',
-    }
-
-    handleNameChange = (email) => {
-        this.setState({ email });
-        console.log(this.state.email);
-    }
-
-    handlePasswordChange = (password) => {
-        this.setState({ password });
-        console.log(this.state);
-    }
-
-    handleSignupPress = () => {
-        this.props.navigation.navigate('Signup');
-    }
-
-    handleSignInPress = async () => {
-        if (this.state.email.length === 0 || this.state.password.length === 0){
-            this.setState({ error: 'Errou feio, errou rude meu jovem...' })
-            console.log(this.state.error);
-        } else {
-            console.log(this.state);
-            this.props.navigation.navigate('Home'); 
-            this.setState({ error: 'Acho que foi' })
-            const response = await api.post('/login', {
-                email: this.state.email,
-                password: this.state.password,
-        });
-        
-        
-    }
-}
-
-    render(){  
-        return( 
-            <Container>
-
-            <StatusBar
-                barStyle="light-content"
-                backgroundColor="#454545"
-            />
-                <Logo source={require('../../assets/logo.png')}/>
-                <SubTitle>Jogue e Adiquira Elos</SubTitle>
-                <Title>Login</Title>
-                <Inputs 
-                    autoCapitalize='none'
-                    onChangeText={this.handleNameChange}
-                    value={this.state.email}
-                    placeholder="Digite seu e-mail" 
-                    keyboardType="email-address" 
-                    returnKeyType = {"next"}/>
-
-                <Inputs
-                    autoCapitalize='none'
-                    onChangeText={this.handlePasswordChange} 
-                    value={this.state.password}
-                    placeholder="Digite sua senha" 
-                    secureTextEntry={true}/>
-                
-                {this.state.error.length !== 0 && <ErrorMessage>{this.state.error}</ErrorMessage>}
-
-                <ButtonView>
-                    <Button onPress={this.handleSignInPress}>
-                        <TextButton>Login</TextButton>
-                    </Button>
-                    <Button
-                        onPress={this.handleSignupPress}
-                    >
-                        <TextButton>Cadastre-se</TextButton>
-                    </Button>
-                </ButtonView>
-            </Container>
-        )}}
-
- */

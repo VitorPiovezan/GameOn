@@ -7,13 +7,14 @@ import Profile from '../Profile/profile';
 import Config from '../Config/config';
 import EditProfile from '../EditProfile/editprofile'
 
+
 import { createAppContainer} from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
 const Routes = createStackNavigator(  
   {  
     //Home: Home,
-    Login: Login,
+    Login:  Login,
     Signup: Signup,
     RouterBase: RouterBase,
     Chat: Chat,
@@ -23,12 +24,13 @@ const Routes = createStackNavigator(
     EditProfile: EditProfile
   },
 
-
 RouterBase.navigationOptions = {
   headerShown: false,
   swipeEnabled: true,
   onSwipeStart: 'Profile',
   onSwipeEnd: 'Feed',
 })
+
+
 
 export default createAppContainer(Routes);  

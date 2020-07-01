@@ -4,7 +4,7 @@
             "outputFile": "/home/johnny/go/src/GameOn/mobile/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "/home/johnny/.gradle/caches/transforms-2/files-2.1/bfbddee5c22880e89a9e70fcbb2ba5a8/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "source": "/home/johnny/.gradle/caches/transforms-2/files-2.1/d56f62ea3e08cf5a4037d3cb341807a2/res/values-ldltr-v21/values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

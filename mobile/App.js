@@ -1,127 +1,63 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
+import 'react-native-gesture-handler';
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-  TextInput,
-  KeyboardAvoidingView,
-} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import Login from './src/components/Login/login';
+import Signup from './src/components//Signup/Signup'
+import HomeRoute from './src/components/Home/routes'
+import Chat from './src/components/Chat/chat';
+import Feed from './src/components/Home/feed';
+import Profile from './src/components/Profile/profile';
+import Config from './src/components/Config/config';
+import EditProfile from './src/components/EditProfile/editprofile'
 
-const App: () => React$Node = () => {
+
+
+/* const RootStack = createStackNavigator({
+  Login: { screen: Login },
+  Signup: { screen: Signup },
+  RouterBase: { screen : RouterBase },
+  Chat: { screen : Chat },
+  Feed: { screen : Feed },
+  Profile: { screen : Profile },
+  Config: { screen : Config },
+  EditProfile: { screen : EditProfile }
+},
+RouterBase.navigationOptions = {
+  headerShown: false,
+  swipeEnabled: true,
+  onSwipeStart: 'Profile',
+  onSwipeEnd: 'Feed',
+}); */
+
+
+const Stack = createStackNavigator();
+
+export default function App() {
   return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        
-          <Header />
-          <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}></Text></View>
-          
-          <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Login">
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Signup" component={Signup} />
+        <Stack.Screen name="HomeRoute" component={HomeRoute} />
+        <Stack.Screen name="Chat" component={Chat} />
+        <Stack.Screen name="Feed" component={Feed} />
+        <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="Settings" component={Config} />
+        <Stack.Screen name="EditProfile" component={EditProfile} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  )
+}
 
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
+   
 
-            <KeyboardAvoidingView
-              style = {{ flex: 1 }}
-              behavior={Platform.OS === "ios" ? "padding" : null}>
-                <TextInput style={styles.teste}/>
-            </KeyboardAvoidingView>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-              <KeyboardAvoidingView
-              style = {{ flex: 1 }}
-              behavior={Platform.OS === "ios" ? "padding" : null}>
-                <TextInput style={styles.teste}/>
-            </KeyboardAvoidingView>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-    </>
-  );
-};
-
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-  engine: {
-    position: 'absolute',
-    right: 0,
-  },
-  body: {
-    backgroundColor: '#454545',
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
-});
-
-export default App;
+/* export default () => {
+  return (
+    <AuthProvider>
+      <App />
+    </AuthProvider>
+  )
+}
+ */
