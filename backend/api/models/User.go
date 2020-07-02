@@ -14,10 +14,11 @@ import (
 )
 
 type User struct {
-	ID       uint32 `gorm:"primary_key;auto_increment" 	json:"id"`
-	Username string `gorm:"size:30;not null;unique" 	json:"username"`
-	Email    string `gorm:"size:100;not null;unique" 	json:"email"`
-	//Password  string    `gorm:"size:100;not null;" 			json:"password"`
+	ID        uint32    `gorm:"primary_key;auto_increment" 	json:"id"`
+	Username  string    `gorm:"size:30;not null;unique" 	json:"username"`
+	Bio       string    `gorm:"size:200;'					json:"bio"`
+	Email     string    `gorm:"size:100;not null;unique" 	json:"email"`
+	Password  string    `gorm:"size:100;not null;" 			json:"password"`
 	PhotoURL  string    `gorm:"size:200;" 					json:photoURL`
 	CreatedAt time.Time `gorm:"default:CURRENT_TIMESTAMP"   json:"created_at"`
 	UpdatedAt time.Time `gorm:"default:CURRENT_TIMESTAMP"   json:"updated_at"`
@@ -107,8 +108,19 @@ func (u *User) SaveUser(db *gorm.DB) (*User, error) {
 func (u *User) FindAllUsers(db *gorm.DB) (*[]User, error) {
 	var err error
 	users := []User{}
-	//err = db.Debug().Model(&User{}).Limit(100).Find(&users).Error
-	err = db.Model(&User{}).Select("email").Find(&users).Error
+	err = db.Debug().Model(&User{}).Limit(100).Find(&users).Error
+	err = db.Model(&User{}).Select("id, username, bio, photo_url").Find(&users).Error
+	if err != nil {
+		return &[]User{}, err
+	}
+	return &users, err
+}
+
+func (u *User) FindUsersByIdLogged(db *gorm.DB, loggedId int) (*[]User, error) {
+	var err error
+	users := []User{}
+	err = db.Debug().Model(&User{}).Limit(100).Find(&users).Error
+	err = db.Model(&User{}).Where("id != ?", loggedId).Find(&users).Error
 	if err != nil {
 		return &[]User{}, err
 	}

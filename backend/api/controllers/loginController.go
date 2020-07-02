@@ -17,10 +17,11 @@ import (
 func (server *Server) Login(w http.ResponseWriter, r *http.Request) {
 
 	type loggedUser struct {
-		ID    uint32 `json:"id"`
-		Name  string `json:"username"`
-		Bio   string `json:"bio"`
-		Token string `json:"token"`
+		ID       uint32 `json:"id"`
+		Name     string `json:"username"`
+		Bio      string `json:"bio"`
+		PhotoURL string `json:photourl`
+		Token    string `json:"token"`
 	}
 
 	body, err := ioutil.ReadAll(r.Body)
@@ -55,6 +56,7 @@ func (server *Server) Login(w http.ResponseWriter, r *http.Request) {
 	activeUser.ID = user.ID
 	activeUser.Name = user.Username
 	activeUser.Bio = user.Bio
+	activeUser.PhotoURL = user.PhotoURL
 	activeUser.Token = token
 
 	responses.JSON(w, http.StatusOK, activeUser)

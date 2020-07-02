@@ -52,9 +52,13 @@ func (server *Server) CreateUser(w http.ResponseWriter, r *http.Request) {
 
 func (server *Server) GetUsers(w http.ResponseWriter, r *http.Request) {
 
-	user := models.User{}
+	loggedId, error := strconv.Atoi(r.Header.Get("user"))
+	if error != nil {
+		fmt.Printf("%s", error)
+	}
 
-	users, err := user.FindAllUsers(server.DB)
+	user := models.User{}
+	users, err := user.FindUsersByIdLogged(server.DB, loggedId)
 	if err != nil {
 		responses.ERROR(w, http.StatusInternalServerError, err)
 		return
