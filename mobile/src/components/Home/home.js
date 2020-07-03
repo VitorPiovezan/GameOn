@@ -24,7 +24,6 @@ import api from '../../api/api';
 
 export default function Home ({ route, navigation }) {
   
-  
   const { id } = (route.params.actualUser);
   console.log(id);
   const [loggedUser, setLoggedUser] = useState({});
@@ -38,17 +37,30 @@ export default function Home ({ route, navigation }) {
           user: id,
         }
       })
+      console.log(response.data);
       setUsers(response.data);
+      
     }
 
     loadUsers();
   }, [id]);
 
-  function handleLike() {
-    console.log(users)
+  async function handleLike( loggedId, targetId ) {
+
+    const response = api.post('/like', 
+    {
+      userId: loggedId,
+      targetId: targetId
+    });
+
+    console.log(loggedId, targetId);
     const [user, ...rest] = users;
+    
+    //atualiza o state de usuarios apresentados na busca
     setUsers(rest);
   }
+
+
 
   return (
     <Container>
@@ -59,13 +71,13 @@ export default function Home ({ route, navigation }) {
           : (
             users.map( (user, index) => (
               <Card style={{zIndex: users.length - index }}>
-                <Image source={{  }}/>
+                <Image source={{}}/>
                   <Nome>{user.Username}</Nome>
                   <BioView showsVerticalScrollIndicator={false}>
                     <Bio>{user.Bio} </Bio>
                   </BioView>
                   <ButtonContainer>
-                  <LikeButton onPress={handleLike}>
+                  <LikeButton onPress={ () => handleLike(id, user.ID)}>
                     <Text style={{fontWeight: 'bold'}}>OH YEEAH!</Text>
                   </LikeButton>
                   <DislikeButton>

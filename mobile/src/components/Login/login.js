@@ -24,15 +24,10 @@ export default function Login() {
     const [email, setEmail] = useState('johnnypcarvalho@gmail.com');
     const [password, setPassword] = useState('1234');
     const [error, setError] = useState([]);
-
+/* 
     useEffect(() => {
         AsyncStorage.getItem('user').then(user => {
             if (user) {
-                /* navigation.navigate('Home', { 
-                    screen: 'Home', 
-                    params: {
-                    loggedUser: {user}
-                }}); */
                     navigation.navigate('HomeRoute', 
                     {
                         screen: 'Home',
@@ -42,7 +37,7 @@ export default function Login() {
                       });
             }
         })
-    }, []);
+    }, []); */
 
     async function handleLogin() {
 
@@ -69,13 +64,10 @@ export default function Login() {
                         actualUser: response.data
                     }
                       });
-        
-
     }
 
     return (
         <Container>
-
             <StatusBar
                 barStyle="light-content"
                 backgroundColor="#454545"
