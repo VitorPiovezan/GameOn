@@ -17,5 +17,18 @@ func (l *Like) SaveLikes(db *gorm.DB) (*Like, error) {
 	if err != nil {
 		return &Like{}, err
 	}
+
 	return l, nil
+}
+
+func VerifyMatch(db *gorm.DB, userid uint32, targetid uint32) (bool, error) {
+
+	var err error
+
+	err = db.Debug().Model(&Like{}).Where("user_id = ? and target_id = ?", targetid, userid).Error
+	if err != nil {
+		return false, err
+	}
+
+	return true, err
 }
